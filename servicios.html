@@ -1,126 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Visas Trámites Asesoría Bolivia</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Estilos personalizados -->
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #000; /* Fondo negro */
-            color: #FFD700; /* Texto dorado */
-        }
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            color: #FFD700; /* Texto dorado */
-        }
-        .services-section {
-            padding: 80px 0;
-            background-color: #000; /* Fondo negro */
-        }
-        .service-card {
-            text-align: center;
-            padding: 30px;
-            border: 1px solid #FFD700; /* Borde dorado */
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background-color: #111; /* Fondo oscuro */
-            color: #FFD700; /* Texto dorado */
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2); /* Sombra dorada */
-        }
-        .service-card img {
-            width: 80px;
-            margin-bottom: 20px;
-        }
-        .navbar {
-            background-color: #000 !important; /* Fondo negro */
-            border-bottom: 2px solid #FFD700; /* Borde dorado */
-        }
-        .navbar-brand, .nav-link {
-            color: #FFD700 !important; /* Texto dorado */
-        }
-        .nav-link:hover {
-            color: #ccac00 !important; /* Dorado más oscuro al pasar el mouse */
-        }
-        .footer {
-            background-color: #000; /* Fondo negro */
-            color: #FFD700; /* Texto dorado */
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Visas Trámites Asesoría Bolivia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #000; /* Fondo negro */
+      color: #FFD700; /* Texto dorado */
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #FFD700; /* Texto dorado */
+    }
+    .services-section {
+      padding: 80px 0;
+      background-color: #000; /* Fondo negro */
+    }
+    .service-card {
+      text-align: center;
+      padding: 30px;
+      border: 1px solid #FFD700; /* Borde dorado */
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #111; /* Fondo oscuro */
+      color: #FFD700; /* Texto dorado */
+      margin-bottom: 30px; /* Espacio inferior entre tarjetas */
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2); /* Sombra dorada */
+    }
+    .service-card img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    .navbar {
+      background-color: #000 !important; /* Fondo negro */
+      border-bottom: 2px solid #FFD700; /* Borde dorado */
+    }
+    .navbar-brand, .nav-link {
+      color: #FFD700 !important; /* Texto dorado */
+    }
+    .nav-link:hover {
+      color: #ccac00 !important; /* Dorado más oscuro al pasar el mouse */
+    }
+    .footer {
+      background-color: #000; /* Fondo negro */
+      color: #FFD700; /* Texto dorado */
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Visas Trámites Asesoría Bolivia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Visas Trámites Asesoría Bolivia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Servicios Section -->
-    <section class="services-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Nuestros Servicios</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="https://s3.eu-central-1.amazonaws.com/annuaire.mairie/img/demarche/93/visa-americana-honduras.jpg" alt="Visa">
-                        <h3>Trámites de Visa</h3>
-                        <p>Gestionamos visas para Estados Unidos, Europa, Asia y más.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="https://static.wixstatic.com/media/bc06ab_d15b505772814d3683bd9e40fca52e1a~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01/bc06ab_d15b505772814d3683bd9e40fca52e1a~mv2.jpg" alt="Pasaporte">
-                        <h3>Trámites de Pasaporte</h3>
-                        <p>Renovación y emisión de pasaportes con asesoría personalizada.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3a%2f%2fwww.aritayasociados.com%2fwp-content%2fuploads%2f2020%2f11%2faserosialegal-1024x683.jpg&ehk=RHkPLLAHwWqpvrOC7vw5iAn9KdcV47e5jmnFm2G8Ct0%3d&risl=&pid=ImgRaw&r=0" alt="Asesoría">
-                        <h3>Asesoría Legal</h3>
-                        <p>Asesoría especializada en trámites migratorios y legales.</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Sección de Servicios -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestros Servicios</h2>
+      <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://s3.eu-central-1.amazonaws.com/annuaire.mairie/img/demarche/93/visa-americana-honduras.jpg" alt="Visa">
+            <h3>Trámites de Visa</h3>
+            <p>Gestionamos visas para Estados Unidos, Europa, Asia y más.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Visas Trámites Asesoría Bolivia. Todos los derechos reservados.</p>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://static.wixstatic.com/media/bc06ab_d15b505772814d3683bd9e40fca52e1a~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01/bc06ab_d15b505772814d3683bd9e40fca52e1a~mv2.jpg" alt="Pasaporte">
+            <h3>Trámites de Renovación de Pasaporte</h3>
+            <p>Renovación de pasaportes con asesoría personalizada.</p>
+          </div>
         </div>
-    </footer>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Asesoría Legal">
+            <h3>Asesoría Legal</h3>
+            <p>Asesoría especializada en trámites migratorios y legales.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Citas Embajada">
+            <h3>Citas para Cualquier Embajada</h3>
+            <p>Asesoría para la obtención de citas en embajadas.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Recuperación de Tarjetas">
+            <h3>Recuperación de Tarjetas de Residencia</h3>
+            <p>Asesoría en la recuperación de tarjetas de residencia.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 6 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Reagrupación Familiar">
+            <h3>Reagrupación Familiar (Régimen Comunitario y General)</h3>
+            <p>Asesoría en procesos de reagrupación familiar.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 7 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Recuperación de Boletos">
+            <h3>Recuperación de Boletos Aéreos</h3>
+            <p>Asesoría en la recuperación de boletos aéreos.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 8 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Reprogramación de Boletos">
+            <h3>Reprogramación de Boletos Aéreos</h3>
+            <p>Asesoría en la reprogramación de boletos aéreos.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 9 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Traducción">
+            <h3>Traducción (Italiano, Inglés)</h3>
+            <p>Servicios de traducción profesional.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 10 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Viajes Internacionales">
+            <h3>Viajes Internacionales</h3>
+            <p>Organización de viajes internacionales.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 11 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://th.bing.com/th/id/R.c3300fb20ae3e4376d30dbb5c229000f?rik=9xrwuPADKsoENw&riu=http%3A%2F%2Fwww.aritayasociados.com%2Fwp-content%2Fuploads%2F2020%2F11%2Faserosialegal-1024x683.jpg" alt="Viajes Nacionales">
+            <h3>Viajes Nacionales</h3>
+            <p>Organización de viajes nacionales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Visas Trámites Asesoría Bolivia. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
