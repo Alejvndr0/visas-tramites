@@ -1,140 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Visas Trámites Asesoría Bolivia</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Estilos personalizados -->
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #000; /* Fondo negro */
-            color: #FFD700; /* Texto dorado */
-        }
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            color: #FFD700; /* Texto dorado */
-        }
-        .contact-section {
-            padding: 80px 0;
-            background-color: #000; /* Fondo negro */
-        }
-        .contact-section .social-links {
-            text-align: center;
-        }
-        .contact-section .social-links a {
-            display: inline-block;
-            margin: 10px 20px;
-            font-size: 1.5rem;
-            color: #FFD700; /* Texto dorado */
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .contact-section .social-links a:hover {
-            color: #ccac00; /* Dorado más oscuro al pasar el mouse */
-        }
-        .contact-section .email-link {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .contact-section .email-link a {
-            font-size: 1.2rem;
-            color: #FFD700; /* Texto dorado */
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .contact-section .email-link a:hover {
-            color: #ccac00; /* Dorado más oscuro al pasar el mouse */
-        }
-        .navbar {
-            background-color: #000 !important; /* Fondo negro */
-            border-bottom: 2px solid #FFD700; /* Borde dorado */
-        }
-        .navbar-brand, .nav-link {
-            color: #FFD700 !important; /* Texto dorado */
-        }
-        .nav-link:hover {
-            color: #ccac00 !important; /* Dorado más oscuro al pasar el mouse */
-        }
-        .footer {
-            background-color: #000; /* Fondo negro */
-            color: #FFD700; /* Texto dorado */
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Visas Trámites Asesoría Bolivia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome desde CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #000; /* Fondo negro */
+      color: #FFD700; /* Texto dorado */
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #FFD700; /* Texto dorado */
+    }
+    .contact-section {
+      padding: 80px 0;
+      background-color: #000; /* Fondo negro */
+    }
+    .contact-section .social-links {
+      text-align: center;
+    }
+    .contact-section .social-links a {
+      display: inline-block;
+      margin: 10px 20px;
+      font-size: 1.5rem;
+      color: #FFD700; /* Texto dorado */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-section .social-links a:hover {
+      color: #ccac00; /* Dorado más oscuro al pasar el mouse */
+    }
+    .contact-section .email-link {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .contact-section .email-link a {
+      font-size: 1.2rem;
+      color: #FFD700; /* Texto dorado */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-section .email-link a:hover {
+      color: #ccac00; /* Dorado más oscuro al pasar el mouse */
+    }
+    /* Fuerza el color de los íconos */
+    .social-links i,
+    .email-link i {
+      color: #FFD700;
+      margin-right: 8px;
+    }
+    .navbar {
+      background-color: #000 !important; /* Fondo negro */
+      border-bottom: 2px solid #FFD700; /* Borde dorado */
+    }
+    .navbar-brand, .nav-link {
+      color: #FFD700 !important; /* Texto dorado */
+    }
+    .nav-link:hover {
+      color: #ccac00 !important; /* Dorado más oscuro al pasar el mouse */
+    }
+    .footer {
+      background-color: #000; /* Fondo negro */
+      color: #FFD700; /* Texto dorado */
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Visas Trámites Asesoría Bolivia</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Visas Trámites Asesoría Bolivia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Contacto Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Contacto</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <!-- Enlaces a redes sociales -->
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/1WZnFmKx8B/" target="_blank" title="Facebook">
-                            <i class="fab fa-facebook"></i> Facebook
-                        </a>
-                        <a href="https://www.tiktok.com/@visas.tramites?_t=ZM-8tbzNoagvby&_r=1" target="_blank" title="Twitter">
-                            <i class="fab fa-twitter"></i> Tiktok
-                        </a>
-                        <a href="https://www.instagram.com/visastramitesyasesoriabolivia?igsh=MXRoZnNkYXlsejFocQ==" target="_blank" title="Instagram">
-                            <i class="fab fa-instagram"></i> Instagram
-                        </a>
-                        <a href="https://wa.me/591123456789" target="_blank" title="WhatsApp">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                    <!-- Enlace de correo electrónico -->
-                    <div class="email-link">
-                        <a href="mailto:">
-                            <i class="fas fa-envelope"></i> correo
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <!-- Contacto Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Enlaces a redes sociales -->
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/1WZnFmKx8B/" target="_blank" title="Facebook">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.tiktok.com/@visas.tramites?_t=ZM-8tbzNoagvby&_r=1" target="_blank" title="TikTok">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://www.instagram.com/visastramitesyasesoriabolivia?igsh=MXRoZnNkYXlsejFocQ==" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/591123456789" target="_blank" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+          <!-- Enlace de correo electrónico -->
+          <div class="email-link">
+            <a href="mailto:correo@ejemplo.com">
+              <i class="fas fa-envelope"></i> correo@ejemplo.com
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Visas Trámites Asesoría Bolivia. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Visas Trámites Asesoría Bolivia. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome (para íconos) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
