@@ -31,6 +31,7 @@
         .hero-section {
             background: url('IMG/e.png') no-repeat center center;
             background-size: cover;
+            background-attachment: fixed;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -41,10 +42,10 @@
         }
 
         .hero-section .container {
-    max-width: 40%;
-    margin-left: auto; /* Asegura que el contenedor se posicione a la derecha */
-    padding-right: 0;  /* Quita el padding a la derecha, si lo hubiera */
-}
+            max-width: 40%;
+            margin-left: auto; /* Asegura que el contenedor se posicione a la derecha */
+            padding-right: 0; /* Quita el padding a la derecha, si lo hubiera */
+        }
 
         .hero-section h1 {
             font-size: 4rem;
@@ -130,6 +131,26 @@
 
         .nav-link:hover {
             color: #FFC107 !important;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
+                background-position: center top; /* Ajusta la posición del fondo */
+            }
+
+            .hero-section .container {
+                max-width: 100%;
+                padding: 0 20px; /* Añade padding horizontal */
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
