@@ -31,7 +31,6 @@
         .hero-section {
             background: url('IMG/e.png') no-repeat center center;
             background-size: cover;
-            background-attachment: fixed;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -135,8 +134,9 @@
 
         @media (max-width: 768px) {
             .hero-section {
-                background-attachment: scroll; /* Desactiva el fondo fijo en móviles */
-                background-position: center top; /* Ajusta la posición del fondo */
+                background-position: center; /* Ajusta la posición del fondo */
+                background-size: contain; /* Asegura que la imagen se ajuste dentro de la sección */
+                padding-right: 20px; /* Reduce el padding a la derecha */
             }
 
             .hero-section .container {
